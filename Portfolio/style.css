@@ -1,0 +1,237 @@
+:root{
+--greenColor : #6b93ff;
+--blueColor: chartreuse;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  background-color: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.about,
+.services,
+.skills,
+.myworks,
+.contact,
+footer,
+.counter {
+  font-family: "poppins";
+  padding: 50px 0px;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0px 80px;
+  margin: auto;
+} 
+
+.section .title {
+  position: relative;
+  text-align: center;
+  font-family: "ubuntu";
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+.section .title::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  background-color: black;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section .title::after {
+  position: absolute;
+  font-size: 20px;
+  color: var(--greenColor);
+  bottom: -12px;
+  padding: 5px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-content,
+.services .services-content,
+.skills .skills-content,
+.myworks .myworks-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/* styling the heading  */
+.head{
+    font-size: 45px;
+    font-weight: 500;
+    padding: 20px 80px;
+    background-color: var(--greenColor);
+    color: white;
+}
+
+/* styling the abouts section  */
+.about .title::after {
+  content: "Who am I?";
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 5px lightgrey;
+}
+.about .about-content .right {
+  width: 55%;
+}
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .about-content .right .text span {
+  color: var(--greenColor);
+}
+.about .about-content .right .text p {
+  text-align: justify;
+}
+.about .about-content .right a {
+  display: inline-block;
+  background-color: var(--greenColor);
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  font-family: "ubuntu";
+  transition: all 900ms ease;
+  border-radius: 6px;
+  margin-top: 20px;
+  border: 2px solid var(--greenColor);
+  font-weight: 500;
+}
+.about .about-content .right a:hover {
+  color: var(--greenColor);
+  background-color: transparent;
+}
+
+/* skills stylings  */
+.skills .title::after {
+  content: "Skills I possess";
+  background-color: white;
+}
+.skills .title::before {
+  background-color: black;
+}
+.skills {
+  background-color: white;
+  color: black;
+}
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left p {
+  text-align: justify;
+}
+.skills .skills-content .left a {
+  display: inline-block;
+  background-color: var(--greenColor);
+  padding: 8px 18px;
+  font-size: 18px;
+  color: white;
+  font-family: "ubuntu";
+  transition: all 900ms ease;
+  border-radius: 6px;
+  margin-top: 20px;
+  border: 2px solid var(--greenColor);
+  font-weight: 500;
+}
+.skills .skills-content .left a:hover {
+  color: var(--greenColor);
+  background-color: transparent;
+}
+.skills .skills-content .right .bars {
+  margin-bottom: 5px;
+}
+.skills .skills-content .right .info {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.skills .skills-content .right .line {
+  position: relative;
+  height: 8px;
+  border-radius: 0px 50px 50px 0px;
+  background-color: grey;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .line::before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  content: "";
+  height: 8px;
+  background-color: var(--greenColor);
+}
+.skills .skills-content .right .line.html::before {
+  width: 80%;
+}
+.skills .skills-content .right .line.css::before {
+  width: 85%;
+}
+.skills .skills-content .right .line.js::before {
+  width: 70%;
+}
+.skills .skills-content .right .line.php::before {
+  width: 60%;
+}
+.skills .skills-content .right .line.mysql::before {
+  width: 85%;
+}
+.skills .skills-content .right .line.react::before {
+  width: 35%;
+}
+.skills .skills-content .right .line.bootstrap::before {
+  width: 80%;
+}
+.skills .skills-content .right .line.sass::before {
+  width: 85%;
+}
+.skills .skills-content .right .line.jquery::before {
+  width: 70%;
+}
+.skills .skills-content .right .line.laravel::before {
+  width: 55%;
+}
+.skills .skills-content .right .line.mongodb::before {
+  width: 45%;
+}
+.skills .skills-content .right .line.git::before {
+  width: 85%;
+}
+.skills .skills-content .right .line.github::before {
+  width: 65%;
+}
