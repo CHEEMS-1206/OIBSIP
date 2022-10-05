@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    background-color: white;
+    height: max-content;
+    width: 50%;
+    margin:15% auto;
+    padding-bottom: 5%;
+}
+
+.heading{
+    text-align: center;
+    background-color:#42c0fb;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    height: 50px;
+    padding: 11px 50px;
+    width: auto;
+    margin: 2% auto;
+    margin-bottom: 20px;
+}
+.sub-cont{
+    height:calc(100% - 100px);
+    width:80%;
+    margin: 0px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    overflow: hidden;
+}
+.sub-cont div{
+    width:40%;
+    text-align: center;
+}
+
+.sub-cont div h1{
+    font-style: italic;
+    font-size: 27px;
+    margin-top: 20px;
+    color:#42c0fb;
+}
+
+img{
+    background-color: white;
+    height: 50px;
+    width:auto;
+}
+.input-field{
+    background-color: azure;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin: 0%;
+}
+
+
+/* resposiveness */
+
+@media screen and (max-width:2000px) {
+    .container{
+    width: 50%;
+    margin:15% auto;
+    padding-bottom: 5%;
+}
+}
+
+@media screen and (max-width:1000px) {
+    .container{
+    width: 60%;
+    margin:20% auto;
+    padding-bottom: 6%;
+}
+}
+
+@media screen and (max-width:750px) {
+    .container{
+    width: 80%;
+    margin:20% auto;
+    padding-bottom: 12%;
+}
+}
+
+@media screen and (max-width:500px) {
+    .container{
+    width: 100%;
+    margin:25% auto;
+    padding-bottom: 10%;
+}
+.input-field{
+    background-color: azure;
+    height: 40px;
+    text-align: center;
+    width: 40%;
+    font-size: 15px;
+    padding: 5px 0px;
+    margin: 0%;
+}
+img{
+    background-color: white;
+    height: 40px;
+    width:auto;
+}
+}
